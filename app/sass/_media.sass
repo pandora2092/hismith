@@ -1,0 +1,143 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.navbar-line 
+		.top-phone
+			font-size: 14px
+			margin-right: 0
+		.compare
+			margin-right: 0
+		.profile
+			margin-right: 10px
+
+
+// ≥992px
++media-breakpoint-down(md)
+	.myfooter
+		.bottom-phone
+			font-size: 18px
+		.category
+			li 
+				a 
+					font-size: 12px
+	.navbar-expand-lg 
+		.navbar-nav 
+			.nav-link
+				padding-right: 3px
+				padding-left: 3px
+	.top_navbar
+		height: 100%;
+		.navbar-nav
+			margin: 100px 0
+			li 
+				padding: 5px 0
+				a 
+					font-size: 18px
+		.compare
+			margin-bottom: 20px
+			font-size: 18px
+
+	.navbar-line 
+		.top-phone
+			font-size: 40px
+			font-family: "Vida33Pro", sans-serif
+			display: inline-block
+
+		.logo_phone
+			display: inline-block
+			position: relative
+			top: -10px
+		.profile
+			display: block
+			margin: 15px 0
+			border: none
+			color: $accent
+			font-size: 18px
+			padding: 0
+			.fa
+				display: none
+	.wrap_aside 
+		.alarm
+			width: 100%
+
+	.navbar-expand-lg 
+		.navbar-nav 
+			.nav-link
+				padding: 1px
+// ≥768px
++media-breakpoint-down(sm)
+	.main
+		margin: 50px 0
+		.aside-menu
+			display: none
+	.wrap_aside
+		border: none 
+		.alarm
+			width: 100%
+	.adress 
+		.adress-one
+			border: none
+			&:nth-child(1)
+				border-right: 1px solid #f4f4f4
+				padding-right: 15px
+			&:nth-child(2)
+				padding-left: 15px
+
+// ≥640px
++media-breakpoint-down(xs)
+	.top_bg 
+		background-position: 50%
+		.object
+			width: 320px
+
+	.adress 
+		.adress-one
+			&:nth-child(1)
+				padding: 0 15px
+				border-right: none
+			&:nth-child(2)
+				padding: 0 15px
+
+	.myfooter
+		.category
+			margin-bottom: 0
+		.custom_container
+			.first-nav
+					margin-top: 10px
+			.nav_foot
+				border-bottom: 1px solid #edeeee
+				position: relative
+			.main-point
+				margin-top: 10px
+				.fa 
+					display: inline-block
+					position: absolute
+					right: 0
+					font-size: 24px
+					top: 10px
+		
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+	
+
+// ≤992px
++media-breakpoint-up(lg)
+	.hidden-lg 
+		display: none
+
+// ≤1200px
++media-breakpoint-up(xl)
+	.hidden-lg 
+		display: none
